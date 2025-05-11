@@ -1,0 +1,207 @@
+body {
+    font-family: Lora, sans-serif;
+    background-color: rgb(37, 37, 41);
+    color: aliceblue;
+    font-size: 16px;
+    margin: 0 16px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: orange;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+}
+
+a:hover {
+    color: red;
+}
+
+p {
+    line-height: 150%;
+}
+
+b {
+    font-size: 1.4rem;
+}
+
+span {
+    margin-bottom: 1rem;
+}
+
+.bullet {
+    filter: opacity(0.6);
+}
+
+.contact span:nth-child(1) {
+    filter: opacity(0.6);
+}
+
+.softSkills p {
+    filter: opacity(0.8);
+}
+
+.container {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .header .hero {
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+}
+
+.container .header .hero h1 {
+    width: min-content;
+}
+
+
+.container .header .hero div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.container .header .contact {
+    margin-top: 2rem;
+}
+
+.container .header .contact .item-contato {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container .skills {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.container .hardSkills {
+    width: 100%;
+    max-width: 480px;
+}
+
+.container .softSkills {
+    width: 100%;
+    max-width: 640px;
+}
+
+.container .hardSkills ul, .softSkills ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.container .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.project ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    filter: opacity(0.8);
+}
+
+.project ul b {
+    color: orange;
+}
+
+.container .projects .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    position: relative;
+}
+
+.container .projects .project .content img {
+    margin: 24px 0;
+}
+
+.container .projects .project .left {
+    display: flex;
+    flex-direction: column;
+    min-width: 96px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.container .projects .project .fotos {
+    margin-top: 48px;
+}
+
+.container .projects .project .fotos img {
+    border-radius: 1rem;
+}
+
+.container .projects .project .right .content span{
+    font-size: 1.125rem;
+    font-weight: Bold;
+    line-height: 150%;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .container .projects .project {
+        position: relative;
+        flex-direction: row;
+        gap: 56px;
+        padding-bottom: 96px;
+    }
+
+    .container .projects .project .left {
+        width: 100%;
+        text-align: end;
+    }
+
+
+    .container .projects h2 {
+        text-align: center;
+    }
+
+    .container .projects .project {
+        margin-bottom: 8rem;
+    }
+
+    .container .projects .project .fotos {
+        position: absolute;
+        left: 72px;
+        top: 56px;
+    }
+
+}
